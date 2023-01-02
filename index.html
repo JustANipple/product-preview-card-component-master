@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+        @font-face {
+        font-family: 'frauncesblack';
+        src: url('fonts/frauncessoftwonkopszwght-webfont.woff2') format('woff2'),
+            url('fonts/frauncessoftwonkopszwght-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .header,
+    .description,
+    .smallprice,
+    .cartp {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .cartp {
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+
+      padding-left: 10px;
+    }
+
+    .header,
+    .description,
+    .smallprice {
+      color: hsl(228, 12%, 48%);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .title,
+    .bigprice {
+      font-family: 'frauncesblack', serif;
+    }
+
+    .title {
+      color: hsl(212, 21%, 14%);
+    }
+
+    .bigprice{
+      color: #3c8067;
+
+      margin: 14px 0 14px 0;
+      font-size: 2em;
+    }   
+
+    .smallprice {
+      text-decoration: line-through;
+
+      padding-left: 10px;
+    }
+    
+    button {
+      background-color: #3c8067;
+      border: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    button:hover {
+      background-color: #3a8f6d;
+    }
+
+    button:active {
+      background-color: #194131;
+    }
+
+    main {
+      background-color: hsl(0, 0%, 100%);
+
+      display: flex;
+      max-width: 600px;
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+    }
+
+    .pricecont {
+      display: flex;
+      align-items: center;
+    }
+
+    .image {
+      flex: 1;
+      background-size: contain;
+      border-radius: 10px 0 0 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .image {
+        content:url(images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+      }
+
+      main {
+        flex-direction: column;
+        max-width: 350px;
+      }
+
+      .box {
+        border-radius: 10px 10px 0 0;
+      }
+
+      .box .innerbox {
+        padding: 25px;
+      }
+    }
+
+    .box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .innerbox {
+      padding: 30px;
+    }
+
+    .header {
+      margin-top: 0;
+      letter-spacing: 3px;
+    }
+
+    .description {
+      line-height: 1.7;
+    }
+
+    .title,
+    .description,
+    .pricecont {
+      margin: 19px 0;
+    }
+
+  </style>
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+</head>
+<body>
+
+  <main>
+
+    <img src="images/image-product-desktop.jpg" alt="Perfume image" class="image">
+
+    <div class="box">
+      <div class="innerbox">
+
+        <p class="header">PERFUME</p>
+        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="pricecont">
+          <h2 class="bigprice">
+            $149.99
+          </h2>
+          <p class="smallprice">
+            $169.99
+          </p>
+        </div>
+        <button>
+          <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+          <p class="cartp">Add to Cart</p>
+        </button>
+
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
