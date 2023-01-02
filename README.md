@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/JustANipple/product-preview-card-component/blob/master/index.html)
-- Live Site URL: [Live site](https://justanipple.github.io/product-preview-card-component/)
+- Live Site URL: [Live site](https://justanipple.github.io/product-preview-card-component-master/)
 
 ## My process
 
